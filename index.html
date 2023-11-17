@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rent Car</title>
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="h__logo">
+                <a href="/index.html">Luxury rent a car</a>
+                <div class="h__location">
+                    <i class="fa-solid fa-location-dot"></i> Toshkent
+                </div>
+            </div>
+            <div class="h__List">
+                <div class="h__item">Подобрать авто</div>
+                <div class="h__item">Условия</div>
+                <div class="h__item">О нас</div>
+                <div class="h__item">Контакты</div>
+            </div>
+            <div class="h__Link">
+                <div class="h__LinkBtn">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <div class="h__LinkPhone">
+                    <a href="tel: +998949463578">+998 94 946-35-78</a>
+                </div>
+            </div>
+            <div class="h__btns">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </header>
+        <div class="hero">
+            <div class="hero__List">
+                <div class="hero__Item">
+                    <div class="hero__Text">
+                        <h2>Ijaraga Avftomashinalar Toshkentda</h2>
+                    </div>
+                </div>
+                <div class="hero__Item">
+                    <div class="hero__Text">
+                        <h2>Katta miqdordagi avftomobillar</h2>
+                    </div>
+                </div>
+                <div class="hero__Item">
+                    <div class="hero__Text">
+                        <h2>Avftomobilni istalgan joyga yetkazib berish</h2>
+                    </div>
+                </div>
+                <div class="hero__Item">
+                    <div class="hero__Text">
+                        <h2>Doimiy mijozlarga chegirmalar</h2>
+                    </div>
+                </div>
+                <div class="hero__Item">
+                    <div class="hero__Text">
+                        <h2>Istalgan turda to'lov</h2>
+                    </div>
+                </div>
+                <div id="dotsHover2">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </div>
+        <main class="main">
+            <div class="section1">
+                <div class="sec1__Text">
+                    <h3>Online zakaz berish</h3>
+                </div>
+                <div class="sec1__List">
+                    <div class="sec1__Input">
+                        <input type="date" name="calendar" id="FirstData">
+                        <input type="date" name="calendar" id="LastData">
+                    </div>
+                    <div class="sec1__check">
+                        <div class="check__item">
+                            <input type="checkbox" name="" id="check1">
+                            <span>Yo'l tanlamas</span>
+                        </div>
+                        <div class="check__item">
+                            <input type="checkbox" name="" id="check2">
+                            <span>Biznes</span>
+                        </div>
+                        <div class="check__item">
+                            <input type="checkbox" name="" id="check3">
+                            <span>Premium</span>
+                        </div>
+                        <div class="check__item">
+                            <input type="checkbox" name="" id="check4">
+                            <span>Sport</span>
+                        </div>
+                        <div class="check__item">
+                            <input type="checkbox" name="" id="check5">
+                            <span>Sport Car</span>
+                        </div>
+                        <div class="check__item">
+                            <input type="checkbox" name="" id="check6">
+                            <span>Kamfort</span>
+                        </div>
+                    </div>
+                    <button class="btn__search">
+                        Variantlarni ko'rish
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box__top">
+                    <h3>Bizning Avftopark</h3>
+                    <div class="box__btn">Barchasini ko'rish</div>
+                </div>
+                <div class="box__List">
+                    <div class="box__btns">
+                        <button class="btn__SUV"><img src="/img/logo/1.svg" alt="logo"> Yo'l tanlamas</button>
+                        <button class="bts__Buss"><img src="/img/logo/2.svg" alt="logo"> Biznes</button>
+                        <button class="btn__Sport"> <img src="/img/logo/3.svg" alt="logo">Sport Car</button>
+                        <button class="btn__Prem"><img src="/img/logo/4.svg" alt="logo"> Premium</button>
+                        <button class="btn__Comf"><img src="/img/logo/5.svg" alt="logo"> Comfort</button>
+                    </div>
+                    <div class="box__SUV-List box__Items tabcontent">
+                    </div>
+                    <div class="box__Buss-List box__Items tabcontent">
+                    </div>
+                    <div class="box__Sport-List box__Items tabcontent">
+                    </div>
+                    <div class="box__Prem-List box__Items tabcontent">
+                    </div>
+                    <div class="box__Comf-List box__Items tabcontent">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+    <script src="/js/bazaFace.js"></script>
+    <script src="/js/slider.js"></script>
+</body>
+
+</html>
