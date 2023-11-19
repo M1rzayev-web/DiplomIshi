@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style/font.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
             <div class="h__logo">
                 <a href="/index.html">Luxury rent a car</a>
                 <div class="h__location">
-                    <i class="fa-solid fa-location-dot"></i> Toshkent
+                    <i class="fa-solid fa-location-dot"></i> Ташкент
                 </div>
             </div>
             <div class="h__List">
@@ -43,27 +44,31 @@
             <div class="hero__List">
                 <div class="hero__Item">
                     <div class="hero__Text">
-                        <h2>Ijaraga Avftomashinalar Toshkentda</h2>
+                        <h2>Аренда авто в Ташкенте</h2>
                     </div>
                 </div>
                 <div class="hero__Item">
                     <div class="hero__Text">
-                        <h2>Katta miqdordagi avftomobillar</h2>
+                        <h2>Большой парк
+                            автомобилей в наличии</h2>
                     </div>
                 </div>
                 <div class="hero__Item">
                     <div class="hero__Text">
-                        <h2>Avftomobilni istalgan joyga yetkazib berish</h2>
+                        <h2>Доставка авто
+                            до вашей геолокации</h2>
                     </div>
                 </div>
                 <div class="hero__Item">
                     <div class="hero__Text">
-                        <h2>Doimiy mijozlarga chegirmalar</h2>
+                        <h2>Скидки постоянным
+                            клиентам</h2>
                     </div>
                 </div>
                 <div class="hero__Item">
                     <div class="hero__Text">
-                        <h2>Istalgan turda to'lov</h2>
+                        <h2>Любая форма
+                            оплаты</h2>
                     </div>
                 </div>
                 <div id="dotsHover2">
@@ -75,63 +80,31 @@
                 </div>
             </div>
         </div>
-        <main class="main">
-            <div class="section1">
-                <div class="sec1__Text">
-                    <h3>Online zakaz berish</h3>
-                </div>
-                <div class="sec1__List">
-                    <div class="sec1__Input">
-                        <input type="date" name="calendar" id="FirstData">
-                        <input type="date" name="calendar" id="LastData">
+        <div class="container">
+            <main class="main">
+                <div class="box">
+                    <div class="box__top">
+                        <h3>Наш автопарк</h3>
+                        <div class="box__btn">Смотреть все</div>
                     </div>
-                    <div class="sec1__check">
-                        <div class="check__item">
-                            <input type="checkbox" name="" id="check1">
-                            <span>Yo'l tanlamas</span>
+                    <div class="box__List">
+                        <div class="box__btns">
+                            <select name="selectNum" id="numbers">
+                                <option value="9">9</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="50">50</option>
+                            </select>
+                            <button class="btn__SUV"><img src="/img/logo/1.svg" alt="logo">Внедорожники</button>
+
+                            <button class="btn__Sport"> <img src="/img/logo/3.svg" alt="logo">Спорткар</button>
+                            <button class="btn__Prem"><img src="/img/logo/4.svg" alt="logo">Премиум</button>
+                            <button class="btn__Comf"><img src="/img/logo/5.svg" alt="logo">Комфорт</button>
                         </div>
-                        <div class="check__item">
-                            <input type="checkbox" name="" id="check2">
-                            <span>Biznes</span>
+
+                        <div class="box__SUV-List box__Items tabcontent">
                         </div>
-                        <div class="check__item">
-                            <input type="checkbox" name="" id="check3">
-                            <span>Premium</span>
-                        </div>
-                        <div class="check__item">
-                            <input type="checkbox" name="" id="check4">
-                            <span>Sport</span>
-                        </div>
-                        <div class="check__item">
-                            <input type="checkbox" name="" id="check5">
-                            <span>Sport Car</span>
-                        </div>
-                        <div class="check__item">
-                            <input type="checkbox" name="" id="check6">
-                            <span>Kamfort</span>
-                        </div>
-                    </div>
-                    <button class="btn__search">
-                        Variantlarni ko'rish
-                    </button>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box__top">
-                    <h3>Bizning Avftopark</h3>
-                    <div class="box__btn">Barchasini ko'rish</div>
-                </div>
-                <div class="box__List">
-                    <div class="box__btns">
-                        <button class="btn__SUV"><img src="/img/logo/1.svg" alt="logo"> Yo'l tanlamas</button>
-                        <button class="bts__Buss"><img src="/img/logo/2.svg" alt="logo"> Biznes</button>
-                        <button class="btn__Sport"> <img src="/img/logo/3.svg" alt="logo">Sport Car</button>
-                        <button class="btn__Prem"><img src="/img/logo/4.svg" alt="logo"> Premium</button>
-                        <button class="btn__Comf"><img src="/img/logo/5.svg" alt="logo"> Comfort</button>
-                    </div>
-                    <div class="box__SUV-List box__Items tabcontent">
-                    </div>
-                    <div class="box__Buss-List box__Items tabcontent">
+
                     </div>
                     <div class="box__Sport-List box__Items tabcontent">
                     </div>
@@ -140,9 +113,45 @@
                     <div class="box__Comf-List box__Items tabcontent">
                     </div>
                 </div>
+        </div>
+        <div class="box__desc">
+            <h4>Москва известна своими величественными аллеями, роскошными торговыми центрами и впечатляющей
+                архитектурой. В таком окружении неудивительно, что спрос на аренду элитных автомобилей в Москве
+                растет с каждым годом. </h4>
+            <p>Эти роскошные автомобили стали неотъемлемой частью жизни успешных бизнесменов, звезд шоу-бизнеса и
+                просто людей, стремящихся испытать неповторимые ощущения от комфорта и мощи.</p>
+        </div>
+        <div class="rent__link">
+            <h3>Арендовать авто прямо сейчас!</h3>
+            <div class="rent__link-list">
+                <div class="rent__link-first">
+                    <h4>Dizrental в Москве предлагает широкий выбор моделей от ведущих производителей, таких как
+                        Mercedes, BMW, Audi . Клиенты могут выбирать между спортивными автомобилями, роскошными
+                        седанами или эксклюзивными внедорожниками, чтобы насладиться комфортом и эстетикой этих
+                        превосходных машин.</h4>
+                    <p>Благодаря услугам аренды, каждый желающий может ощутить себя владельцем такого автомобиля на
+                        несколько дней или даже на несколько часов, без необходимости покупки и обслуживания.</p>
+                </div>
+                <div class="rent__link-last">
+                    <input id="name__client" type="text" placeholder="Имя">
+                    <input id="number__client" type="tel" placeholder="+998 94 123 45 67">
+                    <button class="send__Num-btn">Забронировать</button>
+                    <span><input type="checkbox" name="" id="checked__Num">Отправляя форму, я соглашаюсь
+                        с политикой обработки персональных данных</span>
+                </div>
             </div>
+        </div>
+        <div class="key__deck">
+            <h3>3 шага, чтобы арендовать авто</h3>
+            <ul class="key__deck-List">
+            </ul>
+        </div>
+        <div class="reasons__div">
+            <h3>6 причин заказат аренду авто в  DizRental</h3>
+        </div>
         </main>
-        <footer class="footer"></footer>
+    </div>
+    <footer class="footer"></footer>
     </div>
     <script src="/js/bazaFace.js"></script>
     <script src="/js/slider.js"></script>
