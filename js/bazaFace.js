@@ -506,3 +506,102 @@ function showKeyDeck() {
     })
 }
 showKeyDeck()
+
+const reasonsData = [
+    {
+        id: 1,
+        name: "Страховка",
+        deckription: "Все наши автомобили застрахованы по ОСАГО И КАСКО",
+        img: "/img/logo/reasons1.svg"
+    },
+    {
+        id: 2,
+        name: "Ценовая политика",
+        deckription: "Всегда доступные цены и приятные бонусы постоянным клиентам",
+        img: "/img/logo/reasons2.svg"
+    },
+    {
+        id: 3,
+        name: "Оплата",
+        deckription: "Любая удобная для вас форма оплаты (нал/безнал, банковский перевод)",
+        img: "/img/logo/reasons4.svg"
+    },
+    {
+        id: 4,
+        name: "Автопарк",
+        deckription: "Весь автопарк в отличном состоянии    и всегда пополняется новыми моделями",
+        img: "/img/logo/reasons5.svg"
+    },
+    {
+        id: 5,
+        name: "Скорость",
+        deckription: "Оформление аренды любого авто в течении не более 15 минут",
+        img: "/img/logo/reasons6.svg"
+    },
+]
+
+function showReasons() {
+    const showList = document.querySelector(".reasons__list")
+    window.addEventListener("DOMContentLoaded", function () {
+        const data = reasonsData.map((item) => {
+            return `
+            <div class="reasons__item">
+            <span>
+                <img src="${item.img}" alt="${item.name}">
+            </span>
+            <div class="reasons__text">
+                <h4>${item.name}</h4>
+                <p>${item.deckription}</p>
+            </div>
+        </div>
+`
+        }).join("")
+        showList.innerHTML = data
+    })
+}
+showReasons()
+
+
+const brendBaza = [
+    {
+        id: 1,
+        img: "/img/logo/audi.png",
+    },
+    {
+        id: 2,
+        img: "/img/logo/bmw.png",
+    },
+    {
+        id: 3,
+        img: "/img/logo/ford.png",
+    },
+    {
+        id: 4,
+        img: "/img/logo/kia.png",
+    },
+    {
+        id: 5,
+        img: "/img/logo/mers.png",
+    },
+    {
+        id: 6,
+        img: "/img/logo/wolks.png",
+    },
+    {
+        id: 7,
+        img: "/img/logo/porsche.png",
+    },
+]
+function showBrend() {
+    const div = document.querySelector(".brend__list")
+    window.addEventListener("DOMContentLoaded", function () {
+        const data = brendBaza.map((item) => {
+            return `
+            <img src="${item.img}" alt="brend">
+            
+            `
+        }).join("")
+        div.innerHTML = data
+    })
+}
+showBrend()
