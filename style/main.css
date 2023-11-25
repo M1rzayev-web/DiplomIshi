@@ -4,10 +4,10 @@
     text-decoration: none;
     margin: 0 auto;
     padding: 0;
-    /* border: 1px solid red; */
-    /* background: #F4F4F4; */
 }
-
+:root {
+    --padding-all: 0 10%;
+  }
 ::-webkit-scrollbar {
     width: 0.0001px;
 }
@@ -46,6 +46,8 @@
     align-items: center;
     color: goldenrod;
     margin-left: 0;
+    font-family: 'Ephesis', cursive;
+    font-size: 45px;
 }
 
 .h__location {
@@ -99,6 +101,26 @@
     height: 40px;
     display: flex;
     align-items: center;
+}
+
+.h__callBtn>button {
+    width: 150px;
+    height: 45px;
+    border-radius: 8px;
+    border: 2px solid #3C3C3C;
+    color: var(--white, #FFF);
+    font-family: PP Pangram Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.h__callBtn>button:hover {
+    background-color: #343434;
 }
 
 .h__LinkBtn {
@@ -217,7 +239,8 @@
     width: 100%;
     min-height: 400px;
     margin-top: 20px;
-    padding: 0 10%;
+    padding: var(--padding-all);
+
 }
 
 .box__top {
@@ -494,7 +517,8 @@
     width: 100%;
     height: 210px;
     margin-top: 100px;
-    padding: 0 10%;
+    padding: var(--padding-all);
+
 }
 
 .box__desc>h4 {
@@ -519,16 +543,14 @@
 
 .rent__link {
     margin-top: 100px;
-    max-width: 1500px;
+    width: 98%;
     min-height: 700px;
-    border: 1px solid;
     padding: 100px 8.5%;
     border-radius: 26px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     background: linear-gradient(0deg, rgba(18, 18, 18, 0.74) 0%, rgba(18, 18, 18, 0.74) 100%), url("/img/background/5.jpg");
-
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -623,9 +645,10 @@
 
 .key__deck {
     width: 100%;
-    height: 456px;
+    min-height: 456px;
     margin-top: 100px;
-    padding: 0 10%;
+    padding: var(--padding-all);
+
 }
 
 .key__deck>h3 {
@@ -644,20 +667,23 @@
 
 .key__deck-List {
     width: 100%;
-    height: 272px;
+    height: 290px;
     margin-top: 60px;
     display: flex;
+    overflow-x: scroll;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .key__deck-List>li {
-    max-width: 374px;
-    height: 100%;
+    min-width: 324px;
+    height: 272px;
     border-radius: 20px;
     background: var(--white, #FFF);
     padding: 65px 50px;
     display: flex;
+    margin: 0 10px;
 }
 
 .key__deck-List>li>span>p {
@@ -698,7 +724,8 @@
 .reasons__div {
     width: 100%;
     min-height: 650px;
-    padding: 0 10%;
+    padding: var(--padding-all);
+
     margin-top: 100px;
 }
 
@@ -772,7 +799,8 @@
 .brend__rent {
     width: 100%;
     height: 150px;
-    padding: 0 10%;
+    padding: var(--padding-all);
+
     margin-top: 50px;
 }
 
@@ -795,7 +823,8 @@
 .callDiller {
     width: 100%;
     min-height: 750px;
-    padding: 0 10%;
+    padding: var(--padding-all);
+
     display: flex;
     margin-top: 120px;
 }
@@ -906,4 +935,204 @@
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
+}
+
+.footer {
+    width: 98%;
+    min-height: 440px;
+    border-radius: 36px 36px 0px 0px;
+    background: #1D1D1D;
+    margin-top: -2px;
+    padding: var(--padding-all);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-l {
+    max-width: 490px;
+    height: 315px;
+    margin-right: 0;
+}
+
+.footer-r {
+    max-width: 650px;
+    height: 315px;
+}
+
+.footer-logo {
+    height: 60px;
+}
+
+.footer-logo>a {
+    font-family: 'Ephesis', cursive;
+    font-size: 45px;
+    color: white;
+}
+
+.footer-tel {
+    width: 381px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 61px;
+    margin-bottom: 40px;
+}
+
+.link-footer {
+    width: 100%;
+    height: 50px;
+    display: grid;
+}
+
+#location {
+    width: 300px;
+    color: #AFAFAF;
+    font-family: PP Pangram Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    margin-right: 0;
+}
+
+#mailDiz {
+    width: 140px;
+    color: var(--white, #FFF);
+    font-family: PP Pangram Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    margin-right: 0;
+}
+
+.footer-tel>span>a {
+    color: var(--white, #FFF);
+    font-family: Unbounded;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.footer-tel>span>p {
+    color: #AFAFAF;
+    font-family: PP Pangram Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+    margin-top: 10px;
+}
+
+.bronCar {
+    border-radius: 8px;
+    border: 2px solid var(--white, #FFF);
+    color: var(--white, #FFF);
+    font-family: PP Pangram Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    background-color: transparent;
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.footer-list {
+    width: 100%;
+    height: 210px;
+    display: flex;
+}
+
+.footer-item {
+    width: 161px;
+}
+
+.footer-item>h4 {
+    color: var(--white, #FFF);
+    font-family: PP Pangram Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    /* 133.333% */
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.footer-item>a {
+    color: #AFAFAF;
+    font-family: PP Pangram Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+}
+
+.footer-item>a:hover {
+    color: var(--white, #FFF);
+}
+
+.f__LinkBtn {
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0;
+    margin-top: 35px;
+}
+
+.f__LinkBtn>a {
+    color: white;
+    opacity: 0.3;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.f__LinkBtn>a:hover {
+    opacity: 1;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    opacity: 0.14;
+    background: #FFF;
+    margin-top: 40px;
+}
+
+.footer-bottom {
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+}
+
+.footer-bottom>p {
+    margin-left: 0;
+    color: #7E7E7E;
+    font-family: PP Pangram Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.footer-bottom>span {
+    margin-right: 0;
+}
+
+.footer-bottom>span>p {
+    margin-left: 0;
+    color: #7E7E7E;
+    font-family: PP Pangram Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
 }
