@@ -328,6 +328,7 @@
     min-height: 500px;
     padding: var(--padding-all);
     padding-bottom: 50px;
+    display: none;
 }
 
 .Katalog-top {
