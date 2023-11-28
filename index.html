@@ -10,10 +10,37 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/style/font.css">
+    <link rel="stylesheet" href="/style/responsive.css">
 </head>
 
 <body>
     <div class="container">
+        <div class="header__mobile">
+            <div class="header-is__mobile">
+                <div class="h__logo">
+                    <a href="/index.html">LuxRent</a>
+                </div>
+                <div class="h__btns">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="h__burgerX">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+            </div>
+            <div class="header-is__List">
+                <div class="h__List">
+                    <div class="h__item">Подобрать авто</div>
+                    <div class="h__item">Условия</div>
+                    <div class="h__item">О нас</div>
+                    <div class="h__item">Контакты</div>
+                    <a href="tel: +998949463578">+998 94 946-35-78</a>
+                    <div class="h__callBtn">
+                        <button>Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <header class="header">
             <div class="h__logo">
                 <a href="/index.html">LuxRent</a>
@@ -41,6 +68,9 @@
             </div>
             <div class="h__btns">
                 <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="h__burger">
+                <i class="fa-solid fa-bars-staggered"></i>
             </div>
         </header>
         <div class="hero">
@@ -83,98 +113,120 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <main class="main">
-                <div class="box">
-                    <div class="box__top">
-                        <h3>Наш автопарк</h3>
-                        <div class="box__btn">Смотреть все</div>
-                    </div>
-                    <div class="box__List">
-                        <div class="box__btns">
-                            <select name="selectNum" id="numbers">
-                                <option value="9">Select 9</option>
-                                <option value="20">Select 20</option>
-                                <option value="30">Select 30</option>
-                                <option value="50">Select 50</option>
-                            </select>
-                            <button class="btn__SUV"><img src="/img/logo/1.svg" alt="logo">Внедорожники</button>
+        <main class="Katalog-main">
+            <div class="Katalog-top">
+                <span><a href="/index.html">Главная</a> / <p>Каталог</p></span>
+            </div>
+            <div class="Katalog-text">
+                <h3>Каталог</h3>
+                <div class="K__selection">
+                    <select name="K-select" id="K__select">
+                        <option value>Сортировка</option>
+                        <option value="">по возрастанию цены</option>
+                        <option value="">по убыванию цены</option>
+                        <option value="">сначала новые</option>
+                        <option value="">по названию</option>
+                    </select>
+                </div>
+            </div>
+            <div class="Katalog__list">
+                <div class="K__filtr">
+                   <div class="filtr-top">
+                    <h4>Фильтры</h4>
+                   </div>
+                </div>
+            </div>
+        </main>
+        <main class="main">
+            <div class="box">
+                <div class="box__top">
+                    <h3>Наш автопарк</h3>
+                    <div class="box__btn">Смотреть все</div>
+                </div>
+                <div class="box__List">
+                    <div class="box__btns">
+                        <select name="selectNum" id="numbers">
+                            <option value="9">Select 9</option>
+                            <option value="20">Select 20</option>
+                            <option value="30">Select 30</option>
+                            <option value="50">Select 50</option>
+                        </select>
+                        <button class="btn__SUV"><img src="/img/logo/1.svg" alt="logo">Внедорожники</button>
 
-                            <button class="btn__Sport"> <img src="/img/logo/3.svg" alt="logo">Спорткар</button>
-                            <button class="btn__Prem"><img src="/img/logo/4.svg" alt="logo">Премиум</button>
-                            <button class="btn__Comf"><img src="/img/logo/5.svg" alt="logo">Комфорт</button>
-                        </div>
+                        <button class="btn__Sport"> <img src="/img/logo/3.svg" alt="logo">Спорткар</button>
+                        <button class="btn__Prem"><img src="/img/logo/4.svg" alt="logo">Премиум</button>
+                        <button class="btn__Comf"><img src="/img/logo/2.svg" alt="logo">Комфорт</button>
+                    </div>
 
+                </div>
+                <div class="box__SUV-List box__Items tabcontent">
+                </div>
+                <div class="box__Sport-List box__Items tabcontent">
+                </div>
+                <div class="box__Prem-List box__Items tabcontent">
+                </div>
+                <div class="box__Comf-List box__Items tabcontent">
+                </div>
+            </div>
+            <div class="box__desc">
+                <h4>Москва известна своими величественными аллеями, роскошными торговыми центрами и впечатляющей
+                    архитектурой. В таком окружении неудивительно, что спрос на аренду элитных автомобилей в Москве
+                    растет с каждым годом. </h4>
+                <p>Эти роскошные автомобили стали неотъемлемой частью жизни успешных бизнесменов, звезд шоу-бизнеса и
+                    просто людей, стремящихся испытать неповторимые ощущения от комфорта и мощи.</p>
+            </div>
+            <div class="rent__link">
+                <h3>Арендовать авто прямо сейчас!</h3>
+                <div class="rent__link-list">
+                    <div class="rent__link-first">
+                        <h4>Dizrental в Москве предлагает широкий выбор моделей от ведущих производителей, таких как
+                            Mercedes, BMW, Audi . Клиенты могут выбирать между спортивными автомобилями, роскошными
+                            седанами или эксклюзивными внедорожниками, чтобы насладиться комфортом и эстетикой этих
+                            превосходных машин.</h4>
+                        <p>Благодаря услугам аренды, каждый желающий может ощутить себя владельцем такого автомобиля на
+                            несколько дней или даже на несколько часов, без необходимости покупки и обслуживания.</p>
                     </div>
-                    <div class="box__SUV-List box__Items tabcontent">
-                    </div>
-                    <div class="box__Sport-List box__Items tabcontent">
-                    </div>
-                    <div class="box__Prem-List box__Items tabcontent">
-                    </div>
-                    <div class="box__Comf-List box__Items tabcontent">
+                    <div class="rent__link-last">
+                        <input id="name__client" type="text" placeholder="Имя">
+                        <input id="number__client" type="tel" placeholder="+998 94 123 45 67">
+                        <button class="send__Num-btn">Забронировать</button>
+                        <span><input type="checkbox" name="" id="checked__Num">Отправляя форму, я соглашаюсь
+                            с политикой обработки персональных данных</span>
                     </div>
                 </div>
-        </div>
-        <div class="box__desc">
-            <h4>Москва известна своими величественными аллеями, роскошными торговыми центрами и впечатляющей
-                архитектурой. В таком окружении неудивительно, что спрос на аренду элитных автомобилей в Москве
-                растет с каждым годом. </h4>
-            <p>Эти роскошные автомобили стали неотъемлемой частью жизни успешных бизнесменов, звезд шоу-бизнеса и
-                просто людей, стремящихся испытать неповторимые ощущения от комфорта и мощи.</p>
-        </div>
-        <div class="rent__link">
-            <h3>Арендовать авто прямо сейчас!</h3>
-            <div class="rent__link-list">
-                <div class="rent__link-first">
-                    <h4>Dizrental в Москве предлагает широкий выбор моделей от ведущих производителей, таких как
-                        Mercedes, BMW, Audi . Клиенты могут выбирать между спортивными автомобилями, роскошными
-                        седанами или эксклюзивными внедорожниками, чтобы насладиться комфортом и эстетикой этих
-                        превосходных машин.</h4>
-                    <p>Благодаря услугам аренды, каждый желающий может ощутить себя владельцем такого автомобиля на
-                        несколько дней или даже на несколько часов, без необходимости покупки и обслуживания.</p>
+            </div>
+            <div class="key__deck">
+                <h3>3 шага, чтобы арендовать авто</h3>
+                <ul class="key__deck-List">
+                </ul>
+            </div>
+            <div class="reasons__div">
+                <h3>5 причин заказат аренду авто в DizRental</h3>
+                <div class="reasons__list">
                 </div>
-                <div class="rent__link-last">
+            </div>
+            <div class="brend__rent">
+                <div class="brend__list">
+                </div>
+            </div>
+            <div class="callDiller">
+                <div class="callImg">
+                    <img src="/img/logo/userGril.png" alt="user">
+                </div>
+                <div class="call__link-last">
+                    <h3>Остались вопросы?</h3>
+                    <p>Менеджер свяжется с вами в течение 15 минут и сможет ответить на все интересующие вопросы</p>
+                    <h4>+7 (499) 110-20-47</h4>
                     <input id="name__client" type="text" placeholder="Имя">
                     <input id="number__client" type="tel" placeholder="+998 94 123 45 67">
                     <button class="send__Num-btn">Забронировать</button>
-                    <span><input type="checkbox" name="" id="checked__Num">Отправляя форму, я соглашаюсь
-                        с политикой обработки персональных данных</span>
+                    <span><input type="checkbox" name="" id="checked__Num">
+                        <p>Отправляя форму, я соглашаюсь
+                            <span>с политикой обработки персональных данных</span>
+                        </p>
+                    </span>
                 </div>
             </div>
-        </div>
-        <div class="key__deck">
-            <h3>3 шага, чтобы арендовать авто</h3>
-            <ul class="key__deck-List">
-            </ul>
-        </div>
-        <div class="reasons__div">
-            <h3>5 причин заказат аренду авто в DizRental</h3>
-            <div class="reasons__list">
-            </div>
-        </div>
-        <div class="brend__rent">
-            <div class="brend__list">
-            </div>
-        </div>
-        <div class="callDiller">
-            <div class="callImg">
-                <img src="/img/logo/userGril.png" alt="user">
-            </div>
-            <div class="call__link-last">
-                <h3>Остались вопросы?</h3>
-                <p>Менеджер свяжется с вами в течение 15 минут и сможет ответить на все интересующие вопросы</p>
-                <h4>+7 (499) 110-20-47</h4>
-                <input id="name__client" type="text" placeholder="Имя">
-                <input id="number__client" type="tel" placeholder="+998 94 123 45 67">
-                <button class="send__Num-btn">Забронировать</button>
-                <span><input type="checkbox" name="" id="checked__Num">
-                    <p>Отправляя форму, я соглашаюсь
-                        <span>с политикой обработки персональных данных</span>
-                    </p>
-                </span>
-            </div>
-        </div>
         </main>
         <footer class="footer">
             <div class="footer-l">
