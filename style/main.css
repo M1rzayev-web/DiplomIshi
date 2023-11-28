@@ -27,6 +27,7 @@
     margin-right: 0;
     cursor: pointer;
 }
+
 .h__burgerX {
     width: 50px;
     height: 50px;
@@ -61,10 +62,11 @@
     width: 100%;
     position: fixed;
     transform: translateX(-100%);
+    display: none;
 }
 
 .header__mobile.active {
-  transform: translateX(0);
+    transform: translateX(0);
 }
 
 .header-is__mobile {
@@ -78,8 +80,8 @@
     color: #ffffff;
     padding: 0 20px;
     border-bottom: 1px solid;
-
 }
+
 .header-is__mobile>.h__logo {
     max-width: 170px;
     margin: 0;
@@ -143,7 +145,7 @@
 .h__location {
     margin-right: 0;
     width: 120px;
-    padding-right: 20px;
+    padding-right: 12px;
     height: 40px;
     background-color: black;
     border-radius: 5px;
@@ -320,18 +322,22 @@
 .dot:hover {
     background: #9F7437;
 }
-.Katalog-main{
+
+.Katalog-main {
     width: 100%;
-    min-height: 700px;
+    min-height: 500px;
     padding: var(--padding-all);
+    padding-bottom: 50px;
 }
-.Katalog-top{
+
+.Katalog-top {
     width: 100%;
     height: 100px;
     display: flex;
     align-items: center;
 }
-.Katalog-top>span{
+
+.Katalog-top>span {
     width: 180px;
     height: 100%;
     display: flex;
@@ -339,28 +345,89 @@
     justify-content: space-between;
     margin-left: 0;
 }
-.Katalog-top>span>a{
-        color: #131313;
-        margin-left: 0;
+
+.Katalog-top>span>a {
+    color: #131313;
+    margin-left: 0;
 }
-.Katalog-text{
+
+.Katalog-text {
     width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
 }
-.Katalog-text>h3{
+
+.Katalog-text>h3 {
     font-size: 35px;
     margin-left: 0;
 }
-.K__selection{
+
+.K__selection {
     margin-right: 0;
 }
-#K__select{
-    height: 30px;
+
+#K__select {
+    height: 35px;
     outline: none;
     border: 1px solid #eae1e1;
 }
+
+.Katalog__list {
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid;
+    margin-top: 30px;
+    display: flex;
+}
+
+.K__filter {
+    margin-left: 0;
+    width: 30%;
+    border: 1px solid red;
+}
+
+.filter-top>h4 {
+    font-size: 20px;
+}
+
+.filter-items {
+    width: 100%;
+    height: 100%;
+}
+
+.filter-item {
+    width: 100%;
+    min-height: 60px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+}
+
+.filter-item_head {
+    width: 100%;
+    height: 20px;
+    border: 1px solid red;
+    display: flex;
+}
+
+.filter-item_name {
+    width: 95%;
+    margin-left: 0;
+    border: 1px solid;
+}
+
+.icon_filter {
+    width: 5%;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.K__items {
+    margin-right: 0;
+}
+
 .main {
     width: 100%;
 }
@@ -1141,7 +1208,8 @@
     line-height: 22px;
     margin-right: 0;
 }
-.footer-tel>span{
+
+.footer-tel>span {
     margin-left: 0;
     margin-right: 15px;
 }
