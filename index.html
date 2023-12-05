@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div class="h__List">
-                <div class="h__item">Подобрать авто</div>
+                <div class="h__item" onclick="showAuto()">Подобрать авто</div>
                 <div class="h__item">Условия</div>
                 <div class="h__item">О нас</div>
                 <div class="h__item">Контакты</div>
@@ -121,38 +121,19 @@
                 <h3>Каталог</h3>
                 <div class="K__selection">
                     <select name="K-select" id="K__select">
-                        <option value>Сортировка</option>
-                        <option value="">по возрастанию цены</option>
-                        <option value="">по убыванию цены</option>
-                        <option value="">сначала новые</option>
-                        <option value="">по названию</option>
+                        <option value="all" selected>Сортировка</option>
+                        <option value="min">по возрастанию цены</option>
+                        <option value="max">по убыванию цены</option>
+                        <option value="new">сначала новые</option>
+                        <option value="AtoB">по названию</option>
                     </select>
                 </div>
             </div>
             <div class="Katalog__list">
-                <div class="K__filter">
-                    <div class="filter-top">
-                        <h4>Фильтры</h4>
-                    </div>
-                    <div class="filter-items">
-                        <div class="filter-item">
-                            <div class="filter-item_head">
-                                <span class="filter-item_name">
-                                    Цена
-                                </span>
-                                <span class="icon_filter">
-                                    <i class="fa-solid fa-angle-left"></i>
-                                </span>
-                            </div>
-                            <div class="filter-item_content">
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="K__items">
-                    ok
-                </div>
+            </div>
+            <div class="Katalog-List-text">
+                <p>Каждый из нас стремится к свободе движения, к возможности менять локации, не завися от обстоятельств. Сервис "DizRental" предлагает именно такую свободу. Здесь, на странице нашего каталога, представлены автомобили различных классов и брендов, готовые стать вашими надёжными спутниками. От быстрых спорткаров до комфортабельных минивэнов, каждый найдет машину по душе. Начните путешествие с выбора автомобиля на DizRental и откройте для себя новые горизонты!</p>
             </div>
         </main>
         <main class="main">
@@ -238,11 +219,7 @@
                     <input id="name__client" type="text" placeholder="Имя">
                     <input id="number__client" type="tel" placeholder="+998 94 123 45 67">
                     <button class="send__Num-btn">Забронировать</button>
-                    <span><input type="checkbox" name="" id="checked__Num">
-                        <p>Отправляя форму, я соглашаюсь
-                            <span>с политикой обработки персональных данных</span>
-                        </p>
-                    </span>
+
                 </div>
             </div>
         </main>

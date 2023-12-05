@@ -133,14 +133,12 @@
     }
 
 
+
 }
 
 
 
 @media screen and (max-width: 440px) {
-    :root {
-        --font-48: 32px;
-    }
     .rent__link-last>input {
         width: 100%;
     }
@@ -151,5 +149,8 @@
 
     .h__logo {
         max-width: 200px;
+    }
+    .hero__Text>h2{
+        font-size: 48px;
     }
 }
