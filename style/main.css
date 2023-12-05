@@ -369,7 +369,7 @@
     margin-right: 0;
 }
 
-#K__select {
+#K__select, #K-select-num {
     height: 35px;
     outline: none;
     border: 1px solid #eae1e1;

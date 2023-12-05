@@ -627,10 +627,15 @@ hBurgerX.addEventListener("click", function () {
 });
 const KatalogList = document.querySelector(".Katalog__list");
 const selectKatalog = document.getElementById("K__select");
+const selectNum = document.getElementById("K-select-num");
+
 selectKatalog.addEventListener("change", FilterAll);
+
+selectNum.addEventListener("change", FilterAll )
 function FilterAll() {
     let SelValue = selectKatalog.value;
     let filteredData = [];
+    let number = selectNum.value;
 
     if (SelValue === "all") {
         filteredData = baza.sort((a, b) => a.id - b.id);
@@ -643,7 +648,9 @@ function FilterAll() {
     } else if (SelValue === "AtoB") {
         filteredData = baza.sort((a, b) => a.name.localeCompare(b.name));
     }
-    const data = filteredData.map((item) => {
+
+    const filterNum = filteredData.slice(0, number);
+    const data = filterNum.map((item) => {
         return `
         <div class="box__Item" key="${item.id}">
             <div class="box__item-Loc">
@@ -669,6 +676,7 @@ function FilterAll() {
     }).join("");
 
     KatalogList.innerHTML = data;
+
 }
 const FirstMain = document.querySelector(".main")
 const FirstHero = document.querySelector(".hero")
