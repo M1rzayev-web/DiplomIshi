@@ -691,3 +691,14 @@ function showAuto(){
     FirstHero.style.display = "none"
     FilterAll()
 }
+const CallDiv=document.querySelector(".call_in-div")
+const hideCall=document.querySelector(".h-div-Call")
+CallDiv.addEventListener("click", hideCallDiv);
+hideCall.addEventListener("click", hideCallDiv)
+function showCallDiv(){
+CallDiv.style.display="block"
+CallDiv.style.display="flex"
+}
+function hideCallDiv(){
+    CallDiv.style.display="none"
+}

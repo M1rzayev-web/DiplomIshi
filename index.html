@@ -35,7 +35,7 @@
                     <div class="h__item">Контакты</div>
                     <a href="tel: +998949463578">+998 94 946-35-78</a>
                     <div class="h__callBtn">
-                        <button>Заказать звонок</button>
+                        <button onclick="showCallDiv()">Заказать звонок</button>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="h__callBtn">
-                <button>Заказать звонок</button>
+                <button onclick="showCallDiv()">Заказать звонок</button>
             </div>
             <div class="h__btns">
                 <i class="fa-solid fa-user"></i>
@@ -139,9 +139,27 @@
 
             </div>
             <div class="Katalog-List-text">
-                <p>Каждый из нас стремится к свободе движения, к возможности менять локации, не завися от обстоятельств. Сервис "DizRental" предлагает именно такую свободу. Здесь, на странице нашего каталога, представлены автомобили различных классов и брендов, готовые стать вашими надёжными спутниками. От быстрых спорткаров до комфортабельных минивэнов, каждый найдет машину по душе. Начните путешествие с выбора автомобиля на DizRental и откройте для себя новые горизонты!</p>
+                <p>Каждый из нас стремится к свободе движения, к возможности менять локации, не завися от обстоятельств.
+                    Сервис "DizRental" предлагает именно такую свободу. Здесь, на странице нашего каталога, представлены
+                    автомобили различных классов и брендов, готовые стать вашими надёжными спутниками. От быстрых
+                    спорткаров до комфортабельных минивэнов, каждый найдет машину по душе. Начните путешествие с выбора
+                    автомобиля на DizRental и откройте для себя новые горизонты!</p>
             </div>
         </main>
+        <div class="call_in-div">
+            <div class="call-inp-list">
+                <div class="call-inp-item">
+                    <p class="h-div-Call"><i class="fa-solid fa-xmark"></i></p>
+                    <h3>Хочу машину
+                    </h3>
+                    <input type="text" placeholder="Имя">
+                    <input type="number" placeholder="Tелефон">
+
+                    <button>Отправить</button>
+
+                </div>
+            </div>
+        </div>
         <main class="main">
             <div class="box">
                 <div class="box__top">
@@ -238,7 +256,7 @@
                     <span><a href="#">+7 (499) 110-20-47</a>
                         <p>Рабочие часы: с 10:00 до 20:00</p>
                     </span>
-                    <button class="bronCar">Заказать звонок</button>
+                    <button onclick="showCallDiv()" class="bronCar">Заказать звонок</button>
                 </div>
                 <div class="link-footer">
                     <a id="location" href="link"><i class="fa-solid fa-location-dot"></i> г. Москва, Автомобильный
