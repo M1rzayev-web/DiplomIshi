@@ -689,6 +689,10 @@ function showAuto(){
     KatalogMain.style.display = "block"
     FirstMain.style.display = "none"
     FirstHero.style.display = "none"
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     FilterAll()
 }
 const CallDiv=document.querySelector(".call_in-div")
@@ -702,3 +706,26 @@ CallDiv.style.display="flex"
 function hideCallDiv(){
     CallDiv.style.display="none"
 }
+// window.addEventListener('scroll', function() {
+//     var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+    
+//    console.log(scrollTop);
+
+//   });
+// Skroll hodisasida saqlash
+window.addEventListener('scroll', function() {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+    localStorage.setItem('scrollTop', scrollTop);
+  });
+  
+  // Saytga qayta kirishda olish
+  window.addEventListener('load', function() {
+    var storedScrollTop = localStorage.getItem('scrollTop');
+    if (storedScrollTop !== null) {
+      window.scrollTo({
+        top: storedScrollTop,
+        behavior: 'smooth'
+      });
+      localStorage.removeItem('scrollTop');
+    }
+  });

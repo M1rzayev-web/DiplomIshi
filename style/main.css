@@ -509,6 +509,7 @@
     border-radius: 5px;
     cursor: pointer;
     margin-left: 0;
+    color: black;
 }
 
 .box__btn:hover {
