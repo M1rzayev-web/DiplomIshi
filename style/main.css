@@ -340,7 +340,7 @@
 }
 
 .Katalog-top>span {
-    width: 180px;
+    min-width: 200px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -369,7 +369,8 @@
     margin-right: 0;
 }
 
-#K__select, #K-select-num {
+#K__select,
+#K-select-num {
     height: 35px;
     outline: none;
     border: 1px solid #eae1e1;
@@ -382,10 +383,12 @@
     display: flex;
     flex-wrap: wrap;
 }
-.Katalog-List-text{
+
+.Katalog-List-text {
     width: 100%;
 }
-.Katalog-List-text>p{
+
+.Katalog-List-text>p {
     width: 100%;
     color: black;
     font-family: PP Pangram Sans;
@@ -394,34 +397,48 @@
     font-weight: 600;
     line-height: 38px;
 }
-.call_in-div{
-   width: 100%;
-   height: 100%;
-   display: flex;
-   display: none;
-   align-items: center;
-   justify-content: center;
-   background-color: #e7e7e71d;
-   position: fixed;
-   top: 0.001px;
-   z-index: 99;
-   
+.layout{
+    width: 100%;
+    min-height: 500px;
+    padding: var(--padding-all);
+    padding-bottom: 50px;
+    /* display: none; */
 }
 
-.call-inp-list{
-   width: 500px;
-   height: 500px;
+.call_in-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000044;
+    position: fixed;
+    top: 0.001px;
+    z-index: 99;
+
+}
+
+.fa-xmark:hover {
+    color: red;
+}
+
+.call-inp-list {
+    width: 500px;
+    height: 500px;
     background-color: white;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 
 }
-.call-inp-item{
+
+.call-inp-item {
     max-width: 100%;
     height: 100%;
     position: relative;
 }
-.call-inp-item>p{
+
+.call-inp-item>p {
     position: absolute;
     right: 0;
     top: -65px;
@@ -429,7 +446,8 @@
     font-size: 45px;
     cursor: pointer;
 }
-.call-inp-item>h3{
+
+.call-inp-item>h3 {
     width: 100%;
     height: 50px;
     display: flex;
@@ -438,7 +456,8 @@
     font-size: 40px;
     margin-top: 25px;
 }
-.call-inp-item>input{
+
+.call-inp-item>input {
     width: 95%;
     margin-left: 2.5%;
     margin-top: 35px;
@@ -450,7 +469,8 @@
     font-size: 18px;
     border-radius: 7px;
 }
-.call-inp-item>button{
+
+.call-inp-item>button {
     width: 95%;
     margin-left: 2.5%;
     margin-top: 65px;
@@ -462,6 +482,7 @@
     border: none;
     border-radius: 7px;
 }
+
 .main {
     width: 100%;
 }
@@ -730,10 +751,11 @@
     font-weight: 700;
     line-height: 20px;
     margin-left: 0;
-    background: linear-gradient(214deg, rgba(255,255,255,0.7036064425770308) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(214deg, rgba(255, 255, 255, 0.7036064425770308) 0%, rgba(0, 0, 0, 1) 100%);
 }
-.box__item-price>button:hover{
-    background: linear-gradient(25deg, rgba(255,255,255,0.7036064425770308) 0%, rgba(0,0,0,1) 100%);
+
+.box__item-price>button:hover {
+    background: linear-gradient(25deg, rgba(255, 255, 255, 0.7036064425770308) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 .box__item-price>p {
@@ -878,6 +900,7 @@
     color: white;
     margin-right: 10px;
 }
+
 .key__deck {
     width: 100%;
     min-height: 456px;
