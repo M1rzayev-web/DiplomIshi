@@ -678,23 +678,8 @@ function FilterAll() {
     KatalogList.innerHTML = data;
 
 }
-const FirstMain = document.querySelector(".main")
-const FirstHero = document.querySelector(".hero")
-const boxBtnShow = document.querySelector(".box__btn")
-const KatalogMain = document.querySelector(".Katalog-main")
-boxBtnShow.addEventListener("click", function () {
-   showAuto()
-})
-function showAuto(){
-    KatalogMain.style.display = "block"
-    FirstMain.style.display = "none"
-    FirstHero.style.display = "none"
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    FilterAll()
-}
+
+
 const CallDiv=document.querySelector(".call_in-div")
 const hideCall=document.querySelector(".h-div-Call")
 CallDiv.addEventListener("click", hideCallDiv);
@@ -706,13 +691,7 @@ CallDiv.style.display="flex"
 function hideCallDiv(){
     CallDiv.style.display="none"
 }
-// window.addEventListener('scroll', function() {
-//     var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-    
-//    console.log(scrollTop);
 
-//   });
-// Skroll hodisasida saqlash
 window.addEventListener('scroll', function() {
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
     localStorage.setItem('scrollTop', scrollTop);
