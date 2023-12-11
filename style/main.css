@@ -183,10 +183,9 @@
     font-style: normal;
     font-weight: 500;
     line-height: 22px;
-}
-.h__item>a{
     color: white;
 }
+
 .h__item:hover {
     color: #9F7437;
 }
@@ -331,7 +330,6 @@
     min-height: 500px;
     padding: var(--padding-all);
     padding-bottom: 50px;
-    display: none;
 }
 
 .Katalog-top {
@@ -1227,7 +1225,7 @@
 }
 
 #mailDiz {
-    max-width: 140px;
+    max-width: 200px;
     color: var(--white, #FFF);
     font-family: PP Pangram Sans;
     font-size: 15px;
