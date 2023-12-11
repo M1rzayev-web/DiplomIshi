@@ -71,18 +71,18 @@ function FilterAll() {
     KatalogList.innerHTML = data;
 
 }
-const CallDiv=document.querySelector(".call_in-div")
-const hideCall=document.querySelector(".h-div-Call")
-CallDiv.addEventListener("click", hideCallDiv);
-hideCall.addEventListener("click", hideCallDiv)
-function showCallDiv(){
-CallDiv.style.display="block"
-CallDiv.style.display="flex"
-}
-function hideCallDiv(){
-    CallDiv.style.display="none"
+const CallDiv = document.querySelector(".call_in-div");
+const hideCall = document.querySelector(".h-div-Call");
+hideCall.addEventListener("click", hideCallDiv);
+
+function showCallDiv() {
+  CallDiv.style.display = "block";
+  CallDiv.style.display = "flex";
 }
 
+function hideCallDiv() {
+  CallDiv.style.display = "none";
+}
 window.addEventListener('scroll', function() {
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
     localStorage.setItem('scrollTop', scrollTop);
