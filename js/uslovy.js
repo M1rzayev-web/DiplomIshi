@@ -1,3 +1,24 @@
+const hBurger = document.querySelector(".h__burger");
+const hBurgerX = document.querySelector(".h__burgerX");
+const hMobile = document.querySelector(".header__mobile");
+
+hBurger.addEventListener("click", function () {
+    hMobile.style.display = "block";
+    setTimeout(function () {
+        hMobile.style.transition = "transform 0.5s ease";
+        hMobile.style.transform = "translateX(0)";
+    }, 1);
+
+});
+
+hBurgerX.addEventListener("click", function () {
+    hMobile.style.transition = "transform 0.5s ease";
+    hMobile.style.transform = "translateX(-100%)";
+    setTimeout(function () {
+        hMobile.style.display = "none";
+    }, 1000);
+});
+
 const CallDiv=document.querySelector(".call_in-div")
 const hideCall=document.querySelector(".h-div-Call")
 CallDiv.addEventListener("click", hideCallDiv);
