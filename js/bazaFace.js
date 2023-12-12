@@ -1,8 +1,4 @@
 const baza = [
-    // 
-    // Premium: "Premium",
-    // Sport: "Sport",
-    // SportCar: "Sport Car",
     {
         id: 1,
         brand: "Chevrolet",
