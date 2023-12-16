@@ -296,7 +296,7 @@ function addSUV() {
               <div class="box__item-description">
                 <ul>
                   <li><p>Ташкент</p></li>
-                  <li><img src="/img/logo/dvigitel.svg" alt=""><p>Toshkent</p></li>
+                  <li><img src="/img/logo/dvigitel.svg" alt="icon"><p>Toshkent</p></li>
                   <li><i class="fa-solid fa-gas-pump"></i><p>benzin</p></li>
                 </ul>
               </div>
