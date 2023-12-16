@@ -302,17 +302,17 @@ function hideCallDiv() {
 }
 window.addEventListener('scroll', function () {
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-    localStorage.setItem('scrollTop', scrollTop);
+    localStorage.setItem('scrollTopCollaction', scrollTop);
 });
 
 // Saytga qayta kirishda olish
 window.addEventListener('load', function () {
-    var storedScrollTop = localStorage.getItem('scrollTop');
+    var storedScrollTop = localStorage.getItem('scrollTopCollaction');
     if (storedScrollTop !== null) {
         window.scrollTo({
             top: storedScrollTop,
             behavior: 'smooth'
         });
-        localStorage.removeItem('scrollTop');
+        localStorage.removeItem('scrollTopCollaction');
     }
 });
