@@ -277,7 +277,7 @@ function FilterAll() {
                     </ul>
                     </div>
                     <div class="box__item-price">
-                    <button>Забронировать</button>
+                    <button onclick="SendLocalFunc(${item.id})" class="sendIDLocal">Забронировать</button>
                     <p><span>${item.price}</span>$/kun</p>
             </div>
         </div>
@@ -288,6 +288,10 @@ function FilterAll() {
     
 }
 FilterAll()
+function SendLocalFunc(id) {
+    localStorage.setItem("itemId", id);
+    window.location.href = "/product/items.html";
+}
 const CallDiv = document.querySelector(".call_in-div");
 const hideCall = document.querySelector(".h-div-Call");
 hideCall.addEventListener("click", hideCallDiv);

@@ -1238,9 +1238,23 @@
 .about-items>ul>li>div>h4 {
     font-size: 18px;
 }
-
+/* eror  */
+.eror-List{
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+    display: none;
+}
+.eror-List>h1{
+    font-size: var(--font-48);
+    background: linear-gradient(214deg, rgba(255, 255, 255, 0.7036064425770308) 0%, rgba(0, 0, 0, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.show-if-id{
+    margin-bottom: 50px;
+}
 /* ItemPageCss */
-
 .boxItem {
     width: 100%;
     padding: var(--padding-all);

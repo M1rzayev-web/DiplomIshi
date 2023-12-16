@@ -301,7 +301,7 @@ function addSUV() {
                 </ul>
               </div>
               <div class="box__item-price">
-                <button>Забронировать</button>
+                <button onclick="SendLocalFunc(${item.id})" class="sendIDLocal">Забронировать</button>
                 <p><span>${item.price}</span>$/kun</p>
               </div>
             </div>
@@ -348,7 +348,7 @@ function addSport() {
                   </ul>
                 </div>
                 <div class="box__item-price">
-                  <button>Забронировать</button>
+                  <button onclick="SendLocalFunc(${item.id})" class="sendIDLocal">Забронировать</button>
                   <p><span>${item.price}</span>$/kun</p>
                 </div>
               </div>
@@ -393,7 +393,7 @@ function addPremium() {
                   </ul>
                 </div>
                 <div class="box__item-price">
-                  <button>Забронировать</button>
+                  <button onclick="SendLocalFunc(${item.id})" class="sendIDLocal">Забронировать</button>
                   <p><span>${item.price}</span>$/kun</p>
                 </div>
               </div>
@@ -438,7 +438,7 @@ function addComfort() {
                   </ul>
                 </div>
                 <div class="box__item-price">
-                  <button>Забронировать</button>
+                  <button onclick="SendLocalFunc(${item.id})" class="sendIDLocal">Забронировать</button>
                   <p><span>${item.price}</span>$/kun</p>
                 </div>
               </div>
@@ -458,11 +458,14 @@ function addComfort() {
     });
 }
 
+function SendLocalFunc(id) {
+    localStorage.setItem("itemId", id);
+    window.location.href = "/product/items.html";
+}
 addSUV();
 addSport();
 addPremium();
 addComfort();
-
 const zayavfka = [
     {
         id: 1,
