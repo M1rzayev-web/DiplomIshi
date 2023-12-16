@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arenda LuxCar Tashkent</title>
+    <title class="itemTitle">Item title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style/font.css">
     <link rel="stylesheet" href="/style/main.css">
     <link rel="stylesheet" href="/style/responsive.css">
-    <link rel="stylesheet" href="/style/font.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -29,7 +29,7 @@
             </div>
             <div class="header-is__List">
                 <div class="h__List">
-                    <a href="/collaction/all.html">Подобрать авто</a>
+                    <a class="h__item" href="/collaction/all.html">Подобрать авто</a>
                     <a class="h__item" href="/page/usloviya-arendy.html">Условия</a>
                     <a class="h__item" href="/page/about-us.html">О нас</a>
                     <a class="h__item" href="/page/contacts.html">Контакты</a>
@@ -40,7 +40,6 @@
                 </div>
             </div>
         </div>
-
         <header class="header">
             <div class="h__logo">
                 <a href="/index.html">LuxRent</a>
@@ -50,14 +49,14 @@
             </div>
             <div class="h__List">
                 <a class="h__item" href="/collaction/all.html">Подобрать авто</a>
-                    <a class="h__item" href="/page/usloviya-arendy.html">Условия</a>
-                    <a class="h__item" href="/page/about-us.html">О нас</a>
-                    <a class="h__item" href="/page/contacts.html">Контакты</a>
+                <a class="h__item" href="/page/usloviya-arendy.html">Условия</a>
+                <a class="h__item" href="/page/about-us.html">О нас</a>
+                <a class="h__item" href="/page/contacts.html">Контакты</a>
             </div>
             <div class="h__Link">
                 <div class="h__LinkBtn">
                     <a href="https://www.instagram.com/m1rzayev.03/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://t.me/+998949463578"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://t.me/+998949463578"><i class="fa-brands fa-telegram"></i></a>
                 </div>
                 <div class="h__LinkPhone">
                     <a href="tel: +998949463578">+998 94 946-35-78</a>
@@ -85,36 +84,79 @@
                 </div>
             </div>
         </div>
-        <main class="Katalog-main">
-            <div class="Katalog-top">
-                <span><a href="/index.html">Главная</a> <i class="fa-solid fa-angle-right"></i> <p>Каталог</p></span>
-            </div>
-            <div class="Katalog-text">
-                <h3>Каталог</h3>
-                <div class="K__selection">
-                    <select name="K-select-num" id="K-select-num">
-                        <option value="12" selected>1 to 12</option>
-                        <option value="24">1 to 24</option>
-                        <option value="36">1 to 36</option>
-                        <option value="100">1 to 100</option>
-                    </select>
-                    <select name="K-select" id="K__select">
-                        <option value="all" selected>Сортировка</option>
-                        <option value="min">по возрастанию цены</option>
-                        <option value="max">по убыванию цены</option>
-                        <option value="new">сначала новые</option>
-                        <option value="AtoB">по названию</option>
-                    </select>
+        <main class="main">
+            <div class="boxItem">
+                <div class="Katalog-top">
+                    <span><a href="/index.html">Главная</a> <i class="fa-solid fa-angle-right"></i> <a
+                            href="/collaction/all.html">Каталог</a> <i class="fa-solid fa-angle-right"></i>
+                        <p class="itemName">Item name</p>
+                    </span>
                 </div>
             </div>
-            <div class="Katalog__list">
-            </div>
-            <div class="Katalog-List-text">
-                <p>Каждый из нас стремится к свободе движения, к возможности менять локации, не завися от обстоятельств.
-                    Сервис "DizRental" предлагает именно такую свободу. Здесь, на странице нашего каталога, представлены
-                    автомобили различных классов и брендов, готовые стать вашими надёжными спутниками. От быстрых
-                    спорткаров до комфортабельных минивэнов, каждый найдет машину по душе. Начните путешествие с выбора
-                    автомобиля на DizRental и откройте для себя новые горизонты!</p>
+            <div class="ItemList">
+                <div class="ItemLeftList">
+                    <h2 class="ItemName">
+                        Mercedes-AMG G63 4MATIC Белый
+                    </h2>
+                    <div class="ItemImgList">
+                        <div class="imgTop">
+                            <img src="/img/images/1632489639.png" alt="">
+                        </div>
+                        <div class="imgItemGalarey">
+                            <img src="/img/images/1632489639.png" alt="">
+                            <img src="/img/images/1632489639.png" alt="">
+                            <img src="/img/images/1632489639.png" alt="">
+                            <img src="/img/images/1632489639.png" alt="">
+                            <img src="/img/images/1632489639.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="ItemRightList">
+                    <div class="ItemRightPrice">
+                        <h3>45 000 ₽</h3>
+                    </div>
+                    <div class="ItemRightBox">
+                        <div class="ItemRightTextTop">
+                            <h3>Стоимость аренды</h3>
+                            <div class="priceItem">
+                                <div><span>
+                                        <h4>от 7 до 14 суток</h4>
+                                    </span>
+                                    <h4>49 000 ₽</h4>
+                                </div>
+                                <div><span>
+                                        <h4>от 14 до 29 суток</h4>
+                                    </span>
+                                    <h4>45 000 ₽</h4>
+                                </div>
+                                <div><span>
+                                        <h4>от 30 суток</h4>
+                                    </span>
+                                    <h4>40 000 ₽</h4>
+                                </div>
+                            </div>
+                            <div class="mathPrice">
+                                <div class="Price-info">
+                                    <div class="product-price">
+                                        45 000 ₽
+                                    </div>
+                                    <span><i class="fa-solid fa-xmark"></i></span>
+                                    <div class="product-quantity">
+                                        <div class="product-quantity-inner">
+                                            <span><i class="fa-solid fa-minus"></i></span>
+                                            <input type="text" value="1">
+                                            <span><i class="fa-solid fa-plus"></i></span>
+                                        </div>
+                                    </div>
+                                    <span><i class="fa-solid fa-equals"></i></span>
+                                    <div class="product-last-price">
+                                        45 000 ₽
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <footer class="footer">
@@ -167,6 +209,7 @@
             </div>
         </footer>
     </div>
-    <script src="/js/collaction.js"></script>
+    <script src="/js/about.js"></script>
 </body>
+
 </html>
