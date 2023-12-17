@@ -485,6 +485,19 @@
     border: none;
     border-radius: 7px;
 }
+/* loader */
+.loader{
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    z-index: 99999;
+    top: 0;
+    font-size: 30px;
+}
 
 .main {
     width: 100%;

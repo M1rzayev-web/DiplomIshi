@@ -12,6 +12,11 @@ const baza = [
         cars: {
             SUV: "Yo'l tanlamas",
             Comfort: "Komford"
+        },
+         images: {
+            1: "/img/images/bmw-xm-suv-blue-US-2024.png",
+            2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
+            3: '/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png'
         }
     },
     {
@@ -26,6 +31,11 @@ const baza = [
         },
         cars: {
             SUV: "Yo'l tanlamas",
+        },
+        images: {
+            1: "/img/images/bmw-xm-suv-blue-US-2024.png",
+            2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
+            3: '/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png'
         }
     },
     {
@@ -42,6 +52,11 @@ const baza = [
             Sport: "Sport",
             SportCar: "Sport Car",
 
+        },
+        images: {
+            1: "/img/images/bmw-xm-suv-blue-US-2024.png",
+            2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
+            3: '/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png'
         }
     },
     {
@@ -61,6 +76,11 @@ const baza = [
             Premium: "Premium"
 
 
+        },
+        images: {
+            1: "/img/images/bmw-xm-suv-blue-US-2024.png",
+            2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
+            3: '/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png'
         }
     },
     {
@@ -78,6 +98,11 @@ const baza = [
             SportCar: "Sport Car",
             Comfort: "Komford"
 
+        },
+        images: {
+            1: "/img/images/bmw-xm-suv-blue-US-2024.png",
+            2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
+            3: '/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png'
         }
     },
     {
@@ -93,6 +118,11 @@ const baza = [
         cars: {
             Sport: "Sport",
             SportCar: "Sport Car",
+        },
+        images: {
+            1: "/img/images/bmw-xm-suv-blue-US-2024.png",
+            2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
+            3: '/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png'
         }
     },
     {
@@ -111,6 +141,11 @@ const baza = [
             Premium: "Premium",
             Comfort: "Komford"
 
+        },
+        images: {
+            1: "/img/images/bmw-xm-suv-blue-US-2024.png",
+            2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
+            3: '/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png'
         }
     },
     {
@@ -128,6 +163,11 @@ const baza = [
             SportCar: "Sport Car",
             Comfort: "Komford"
 
+        },
+        images: {
+            1: "/img/images/bmw-xm-suv-blue-US-2024.png",
+            2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
+            3: '/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png'
         }
     },
     {
@@ -145,6 +185,11 @@ const baza = [
             SUV: "Yo'l tanlamas",
             Premium: "Premium",
 
+        },
+        images: {
+            1: "/img/images/bmw-xm-suv-blue-US-2024.png",
+            2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
+            3: '/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png'
         }
     },
     {
@@ -162,6 +207,11 @@ const baza = [
             SUV: "Yo'l tanlamas",
             Premium: "Premium",
 
+        },
+        images: {
+            1: "/img/images/bmw-xm-suv-blue-US-2024.png",
+            2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
+            3: '/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png'
         }
     },
     {
@@ -179,6 +229,11 @@ const baza = [
             SUV: "Yo'l tanlamas",
             Premium: "Premium",
 
+        },
+        images: {
+            1: "/img/images/bmw-xm-suv-blue-US-2024.png",
+            2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
+            3: '/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png'
         }
     },
     {
@@ -196,6 +251,11 @@ const baza = [
             SUV: "Yo'l tanlamas",
             Premium: "Premium",
 
+        },
+        images: {
+            1: "/img/images/bmw-xm-suv-blue-US-2024.png",
+            2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
+            3: '/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png'
         }
     },
     {
@@ -211,6 +271,12 @@ const baza = [
         cars: {
             Sport: "Sport",
             SportCar: "Sport Car",
+        },
+        images: {
+            1: "/img/images/bmw-xm-suv-blue-US-2024.png",
+            2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
+            3: '/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png'
         }
     },
 ]
+module.exports = baza;
