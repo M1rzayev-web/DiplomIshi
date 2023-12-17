@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
+    <link rel="stylesheet" href="/style/admin.css">
 
 </head>
 
@@ -25,7 +26,28 @@
                 <button class="Change__element">Change element</button>
                 <button class="Create__admin">Create admin</button>
             </div>
-            <div id="carListContainer">1</div>
+            <div class="CarForm">
+                <form id="carRentalForm">
+                    <label for="brand">Brand:</label>
+                    <input type="text" id="brand" name="brand">
+                    <label for="carModel">Car Model:</label>
+                    <input type="text" id="carModel" name="carModel" required>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+              
+              
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price">
+              
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+              
+              
+                    <button type="button" id="submitBtn">Rent Car</button>
+                  </form>
+            </div>
 
         </div>
     </div>
