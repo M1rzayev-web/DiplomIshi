@@ -6,15 +6,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
+    const price = document.getElementById('price').value;
     const carModel = document.getElementById('carModel').value;
-    
+
 
     fetch('http://localhost:3000/api/cars', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ id: generateUniqueId(), brand: "Toyota", name: carModel, price: 120, img: "/img/images/toyota-camry-white-2022.png", year: "2022", region: { Toshkent: "Toshkent", }, cars: { Sedan: "Sedan", Comfort: "Komfort" }, images: { 1: "/img/images/toyota-camry-white-2022.png", 2: "/img/images/toyota-camry-black-2022.png", 3: '/img/images/toyota-camry-blue-2022.png' } }),
+      body: JSON.stringify({ id: generateUniqueId(), brand: "Toyota", name: carModel, price: price, img: "/img/images/toyota-camry-white-2022.png", year: "2022", region: { Toshkent: "Toshkent", }, cars: { Sedan: "Sedan", Comfort: "Komfort" }, images: { 1: "/img/images/toyota-camry-white-2022.png", 2: "/img/images/toyota-camry-black-2022.png", 3: '/img/images/toyota-camry-blue-2022.png' } }),
     })
       .then(response => response.json())
       .then(data => {
