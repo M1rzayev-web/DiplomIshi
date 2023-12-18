@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
-    <link rel="stylesheet" href="/style/admin.css">
+    <link rel="stylesheet" href="/style/main.css">
 
 </head>
 
@@ -26,24 +26,30 @@
                 <button class="Change__element">Change element</button>
                 <button class="Create__admin">Create admin</button>
             </div>
+            <div class="CarsListItem">
+
+            </div>
             <div class="CarForm">
                 <form id="carRentalForm">
+                    <label for="price">id:</label>
+                    <input type="number" id="IdNumber" name="price" readonly>
                     <label for="brand">Brand:</label>
                     <input type="text" id="brand" name="brand">
-                    <label for="carModel">Car Model:</label>
-                    <input type="text" id="carModel" name="carModel" required>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
-              
-              
                     <label for="price">Price:</label>
                     <input type="number" id="price" name="price">
-              
-                  
-              
-              
+                    <!-- <label for="CarType">Car type</label>
+                    <div class="CarType">
+                        Comfort <input type="radio" name="Comfort" id="Comfort" value="Comfort">
+                        SUV <input type="radio" name="SUV" id="SUV" value="SUV">
+                        Premium <input type="radio" name="Premium" id="Premium" value="Premium">
+                        Sport <input type="radio" name="Sport" id="Sport" value="Sport">
+                    </div> -->
+                    <label for="Image"></label>
+                    <input type="file" name="Img" id="Image">
                     <button type="button" id="submitBtn">Rent Car</button>
-                  </form>
+                </form>
             </div>
 
         </div>
