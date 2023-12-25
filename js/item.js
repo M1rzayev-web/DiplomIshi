@@ -447,6 +447,9 @@ const baza = [
                     <img src="${item.img}" alt="${item.name}">
                     </div>
                     <div class="imgItemGalarey">
+                    <img src="${item.images[1]}" alt="${item.name}">
+                    <img src="${item.images[2]}" alt="${item.name}">
+                    <img src="${item.images[3]}" alt="${item.name}">
                     </div>
                     `;
             arendaCarButton.addEventListener("click", function () {
