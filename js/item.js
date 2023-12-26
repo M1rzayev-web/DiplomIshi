@@ -372,6 +372,7 @@ if (!localStorage.getItem("itemId")) {
 
     if (isNaN(inputValue) || inputValue <= 0) {
       valueCar.value = 1;
+
     }
 
     priceCar.innerHTML = item.price * inputValue + "$";
