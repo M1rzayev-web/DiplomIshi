@@ -476,10 +476,10 @@ itemImgValue.forEach((tab) => {
           itemTopImages.src = "/img/images/" + fileName;
           setTimeout(function () {
             itemTopImages.classList.remove("there");
-          }, 300);
+          }, 200);
         }, 0);
       }, 10);
-    }, 700);
+    }, 550);
   });
 });
 
