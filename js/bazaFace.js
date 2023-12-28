@@ -306,7 +306,6 @@ function hideTabContent() {
 
 
     tabs.forEach((item, i) => {
-
         item.classList.remove("activeBtns");
         const img = item.querySelector("img");
         if (img) {

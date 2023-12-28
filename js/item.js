@@ -19,6 +19,7 @@ const baza = [
       2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
       3: "/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png",
     },
+    logo: "/img/logo/bmw.png",
   },
   {
     id: 2,
@@ -38,6 +39,7 @@ const baza = [
       2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
       3: "/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png",
     },
+    logo: "/img/logo/bmw.png",
   },
   {
     id: 3,
@@ -58,6 +60,7 @@ const baza = [
       2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
       3: "/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png",
     },
+    logo: "/img/logo/bmw.png",
   },
   {
     id: 4,
@@ -80,6 +83,7 @@ const baza = [
       2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
       3: "/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png",
     },
+    logo: "/img/logo/bmw.png",
   },
   {
     id: 5,
@@ -101,6 +105,7 @@ const baza = [
       2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
       3: "/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png",
     },
+    logo: "/img/logo/bmw.png",
   },
   {
     id: 6,
@@ -121,6 +126,7 @@ const baza = [
       2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
       3: "/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png",
     },
+    logo: "/img/logo/bmw.png",
   },
   {
     id: 7,
@@ -143,6 +149,7 @@ const baza = [
       2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
       3: "/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png",
     },
+    logo: "/img/logo/bmw.png",
   },
   {
     id: 8,
@@ -164,6 +171,7 @@ const baza = [
       2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
       3: "/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png",
     },
+    logo: "/img/logo/bmw.png",
   },
   {
     id: 9,
@@ -185,6 +193,7 @@ const baza = [
       2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
       3: "/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png",
     },
+    logo: "/img/logo/bmw.png",
   },
   {
     id: 10,
@@ -206,6 +215,7 @@ const baza = [
       2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
       3: "/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png",
     },
+    logo: "/img/logo/bmw.png",
   },
   {
     id: 11,
@@ -227,6 +237,7 @@ const baza = [
       2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
       3: "/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png",
     },
+    logo: "/img/logo/bmw.png",
   },
   {
     id: 12,
@@ -248,6 +259,7 @@ const baza = [
       2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
       3: "/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png",
     },
+    logo: "/img/logo/bmw.png",
   },
   {
     id: 13,
@@ -268,6 +280,7 @@ const baza = [
       2: "/img/images/bmw-Z4-2d-convertible-white-US-2021.png",
       3: "/img/images/bmw-840i-convertible-2d-grey-open-US-2021.png",
     },
+    logo: "/img/logo/bmw.png",
   },
 ];
 // fetch("http://localhost:3000/api/cars")
@@ -372,7 +385,6 @@ if (!localStorage.getItem("itemId")) {
 
     if (isNaN(inputValue) || inputValue <= 0) {
       valueCar.value = 1;
-
     }
 
     priceCar.innerHTML = item.price * inputValue + "$";
@@ -426,24 +438,50 @@ if (!localStorage.getItem("itemId")) {
   });
   const imgTop = document.querySelector(".imgTop");
   const imgItemGalarey = document.querySelector(".imgItemGalarey");
-  
+
   // Boshlanishi uchun bosh divlarni qo'shamiz
   imgTop.innerHTML += `
-          <img src="${item.img}" alt="${item.name}">
+          <img class="imgtopImages" src="${item.img}" alt="${item.name}">
   `;
-  
+  const iconItems = document.querySelector(".iconItem");
+  iconItems.href = item.logo;
+
   // Keyin esa har bir rasmini imgItemGalarey ga qo'shamiz
   for (let i = 1; i <= Object.keys(item.images).length; i++) {
-      imgItemGalarey.innerHTML += `
-      <img src="${item.images[i]}" alt="${item.name}">
+    imgItemGalarey.innerHTML += `
+      <img class="item-gallarey-img" src="${item.images[i]}" alt="${item.name}">
       `;
   }
-  
 
   arendaCarButton.addEventListener("click", function () {
     localStorage.removeItem("itemId");
   });
 }
+
+const itemImgValue = document.querySelectorAll(".item-gallarey-img");
+const itemTopImages = document.querySelector(".imgtopImages");
+
+itemImgValue.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const imgValue = tab.src;
+    const fileName = imgValue.split("/").pop();
+    itemTopImages.classList.add("one");
+    setTimeout(function () {
+      itemTopImages.classList.remove("one");
+      itemTopImages.classList.add("two");
+      setTimeout(function () {
+        itemTopImages.classList.add("there");
+        setTimeout(function () {
+          itemTopImages.classList.remove("two");
+          itemTopImages.src = "/img/images/" + fileName;
+          setTimeout(function () {
+            itemTopImages.classList.remove("there");
+          }, 300);
+        }, 0);
+      }, 10);
+    }, 700);
+  });
+});
 
 // fetch catch
 // })
