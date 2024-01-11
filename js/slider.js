@@ -1,39 +1,31 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+let currentSlide = 0;
+const slides = document.querySelectorAll(".hero__Item");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+function showSlide(index) {
+  if (index < 0) {
+    currentSlide = slides.length - 1;
+  } else if (index >= slides.length) {
+    currentSlide = 0;
+  } else {
+    currentSlide = index;
+  }
 
-function plusSlides(n) {
-  showSlides((slideIndex += n));
+  const translateValue = -currentSlide * 100 + "%";
+  slides.forEach((slide) => {
+    slide.style.transform = "translateX(" + translateValue + ")";
+  });
 }
 
-function currentSlide(n) {
-  showSlides((slideIndex = n));
+function nextSlide() {
+  showSlide(currentSlide + 1);
 }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("hero__Item");
-  var dots = document.getElementsByClassName("dot");
-  var backgroundImg = "url('/img/background/" + n + ".jpg')";
-
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  slides[slideIndex - 1].style.backgroundImage = backgroundImg;
-  dots[slideIndex - 1].className += " active";
+function prevSlide() {
+  showSlide(currentSlide - 1);
 }
 
-// Keyingi slaydga avtomatik o'tish
-setInterval(function () {
-  plusSlides(1);
-}, 15000);
+prevBtn.addEventListener("click", prevSlide);
+nextBtn.addEventListener("click", nextSlide);
 
+showSlide(currentSlide);

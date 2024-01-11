@@ -466,6 +466,7 @@ itemImgValue.forEach((tab) => {
     const imgValue = tab.src;
     const fileName = imgValue.split("/").pop();
     itemTopImages.classList.add("one");
+    tab.style.pointerEvent = "none";
     setTimeout(function () {
       itemTopImages.classList.remove("one");
       itemTopImages.classList.add("two");
@@ -476,18 +477,13 @@ itemImgValue.forEach((tab) => {
           itemTopImages.src = "/img/images/" + fileName;
           setTimeout(function () {
             itemTopImages.classList.remove("there");
+            tab.style.pointerEvents = "";
           }, 200);
         }, 0);
       }, 10);
     }, 550);
   });
 });
-
-// fetch catch
-// })
-// .catch((error) => {
-//     console.error("Malumotlarni olishda xatolik:", error);
-// });
 
 const showIfId = document.querySelector(".show-if-id");
 const errorList = document.querySelector(".error-list");
@@ -506,9 +502,6 @@ hBurger.addEventListener("click", function () {
 hBurgerX.addEventListener("click", function () {
   hMobile.style.transition = "transform 0.5s ease";
   hMobile.style.transform = "translateX(-100%)";
-  setTimeout(function () {
-    hMobile.style.display = "none";
-  }, 1000);
 });
 
 const CallDiv = document.querySelector(".call_in-div");

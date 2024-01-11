@@ -96,12 +96,11 @@
         flex-direction: column;
     }
     .ItemLeftList{
-        width: 95%;
+        width: 100%;
         min-height: 200px;
     }
 .ItemRightList{
-    width: 95%;
-    margin-left: 2%;
+    width: 100%;
 }
     .footer{
         flex-direction: column;
